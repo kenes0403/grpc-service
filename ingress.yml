@@ -6,7 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "GRPC"
 spec:
   rules:
-  - host: kenessary.com
+  - host: {{ secrets.DOMAIN_INGRESS }}
     http:
       paths:
       - path: /
